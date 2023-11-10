@@ -20,7 +20,7 @@ function App() {
     }));
   }
 
-  function addNote() {
+  function addNote(event) {
     if (newNote.title || newNote.content) {
       setAllNotes((prevNotes) => [...prevNotes, newNote]);
       setNewNote({
